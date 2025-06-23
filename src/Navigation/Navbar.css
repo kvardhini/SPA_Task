@@ -1,0 +1,12 @@
+.Header {
+  display: flex;
+  flex-direction: row; /* Makes the list vertical */
+  gap: 10px;
+  background-color: rgb(190, 149, 149);
+  text-align: center;
+  font-size: larger;
+  padding: 8px;
+  font-weight: bolder;
+  
+}
+
