@@ -6,11 +6,12 @@ function Navbar1(){
     return(
         <>
             <nav className="Header">
-                        <Link to='/home'>Home </Link>
-                        <Link to='/about'>About</Link>
-                        <Link to='/contact'>Contact</Link>
-
-                        <Link to='/user/Asha'>User</Link>
+                <Link to='/Login'>Login</Link> 
+                <Link to='/registration'>Registration</Link>   
+                <Link to='/home'>Home </Link>
+                <Link to='/about'>About</Link>
+                <Link to='/contact'>Contact</Link>
+                <Link to='/user/Asha'>User</Link>
             </nav>
         </>
     )

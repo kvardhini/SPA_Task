@@ -1,0 +1,21 @@
+.Register-page{
+    background: url('/All_images/Blog.jpg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+}
+.Register-form{
+    background-color: rgb(86, 86, 240);
+    width: 500px;
+    height: 500px;
+    border: 10px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

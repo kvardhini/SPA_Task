@@ -1,0 +1,23 @@
+.Login-page{
+    background: url('/All_images/Blog.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Login-form{
+    background-color: rgb(86, 86, 240);
+    width: 500px;
+    height: 500px;
+    border: 10px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
