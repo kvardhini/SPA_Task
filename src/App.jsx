@@ -11,6 +11,7 @@ import Profile from './Pages/Profile'
 import Login from './Pages/login/login'
 // import Registration from './Pages/Registration/RegistrationPage'
 import RegistrationPage from './Pages/Registration/Registration'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         <Route path="/"element={<h5>This is the front page</h5>}/>
         <Route path="*"element={<h5>Incorrect Page.</h5>}/>
       </Routes>
-      
+      <Footer/>
 
     </>
   )
