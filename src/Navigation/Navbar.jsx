@@ -9,6 +9,8 @@ function Navbar1(){
                 <Link to='/Login'>Login</Link> 
                 <Link to='/registration'>Registration</Link>   
                 <Link to='/home'>Home </Link>
+                <Link to='/Category'>Category</Link>
+                <Link to="/Dedicate">Dedicate</Link>
                 <Link to='/about'>About</Link>
                 <Link to='/contact'>Contact</Link>
                 <Link to='/user/Asha'>User</Link>

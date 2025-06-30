@@ -1,18 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-import img from "../assets/myimage.jpeg"
 import Banner from "../Components/Banner/Banner";
-
+import All_trending from "../Components/All_trending/All_trending";
+import blogData from "../Utiles/Mockdata";
 
 function HomePage(){
     const navigate = useNavigate();
     return(
         <>  
         <Banner/>
-        <div>
+        <div className="my-2">
             <h1>Read Blogs from </h1>
-            <div>
+            <div className="d-flex justify-content-between">
                 <div className="card" style={{width: "18rem"}}>
                     <img src="./All_images/programming.jpg" className="card-img-top" alt="Programming-image" /> 
                     <div className="card-body">
@@ -32,7 +31,22 @@ function HomePage(){
                     </div>
                 </div>
             </div>
+            
         </div>
+
+       <div >
+            <h1>Trending Blogs</h1>
+            <div className="row">
+                {
+                    blogData.slice(0, 16).map((blog, index) => (
+                    <div key={index} className="col-12 col-sm-6 col-md-3 mb-4">
+                    <All_trending blog={blog} />
+            </div>
+      ))
+    }
+        </div>
+    </div>  
+
         </>
     )
 }
