@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import Banner from "../Components/Banner/Banner";
 import All_trending from "../Components/All_trending/All_trending";
+import blogData from "../Utiles/Mockdata";
 
 function HomePage(){
     const navigate = useNavigate();
@@ -34,21 +34,19 @@ function HomePage(){
             
         </div>
 
-        <div className="trenfing-section">
-            <h1>
-                Trending Blogs
-            </h1>
-            <div className="all-trending-items d-flex justify-content-between">
-                <All_trending/>
-                <All_trending/>
-                <All_trending/>
-                <All_trending/>
-                <All_trending/>
-                <All_trending/>
-
+       <div >
+            <h1>Trending Blogs</h1>
+            <div className="row">
+                {
+                    blogData.slice(0, 16).map((blog, index) => (
+                    <div key={index} className="col-12 col-sm-6 col-md-3 mb-4">
+                    <All_trending blog={blog} />
             </div>
+      ))
+    }
         </div>
-        
+    </div>  
+
         </>
     )
 }

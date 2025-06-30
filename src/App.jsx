@@ -9,9 +9,10 @@ import Dashboard from './Pages/Dashboard'
 import Settings from './Pages/Settings'
 import Profile from './Pages/Profile'
 import Login from './Pages/login/login'
-// import Registration from './Pages/Registration/RegistrationPage'
 import RegistrationPage from './Pages/Registration/Registration'
 import Footer from './Components/Footer/Footer'
+import Category from './Pages/CategoryBlogs/Category'
+import Dedicate from './Pages/DedicatePages/Dedicate'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path='/Login' element={<Login/>} />
         <Route path='/Registration' element={<RegistrationPage/>} />
         <Route path="/home" element={<HomePage/>}/>
+        <Route path="/Category" element={<Category/>}/>
+        <Route path="/Dedicate" element={<Dedicate/>} />
         <Route path="/contact"element={<ContactPage/>}/>
         <Route path="/about"element={<AboutPage/>}/>
         <Route path="/user/:name"element={<UserPage/>}/>
